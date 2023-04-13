@@ -1,0 +1,34 @@
+---
+title: "Intro to the {lifecycling} R package"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Intro to the {lifecycling} R package}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(lifecycling)
+```
+
+The {lifecycling} R package acts as a repository to demonstrate several concepts 
+and packages around versioning and lifecycle documentation. It is aimed at R 
+package development but many of the topics covered apply to other areas of 
+software development, such as semantic versioning.
+
+For a full explanation of the concepts see the [other vignette](https://joshwlambert.github.io/lifecycling/articles/comm_code_dev.html) 
+in this package.
+
+The {lifecycling} package provides no novel functionality, and the functions 
+exported as part of this package are wrapper to explore the functionality of the 
+{lifecycle} R package from tidyverse, see <https://lifecycle.r-lib.org/> for more
+information.
+
+
