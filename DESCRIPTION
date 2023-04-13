@@ -21,3 +21,4 @@ Suggests:
     covr
 Config/testthat/edition: 3
 VignetteBuilder: knitr
+URL: https://joshwlambert.github.io/lifecycling/
