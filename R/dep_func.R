@@ -10,6 +10,7 @@
 #' @export
 #'
 #' @examples
+#' dep_func()
 dep_func <- function(x, y, z, ...) {
   lifecycle::deprecate_warn(when = "0.1.0", what = "dep_func()")
 
@@ -36,6 +37,7 @@ dep_func <- function(x, y, z, ...) {
 #' @export
 #'
 #' @examples
+#' soft_dep_func()
 soft_dep_func <- function(x, y, z, ...) {
   lifecycle::deprecate_soft(when = "0.1.0", what = "soft_dep_func()")
   print("Deprecated function")
@@ -51,6 +53,7 @@ soft_dep_func <- function(x, y, z, ...) {
 #' @export
 #'
 #' @examples
+#' hard_dep_func()
 hard_dep_func <- function(x, y, z, ...) {
   lifecycle::deprecate_stop(when = "0.1.0", what = "hard_dep_func()")
   print("Deprecated function")
