@@ -4,15 +4,21 @@
 \name{lifecycling-package}
 \alias{lifecycling}
 \alias{lifecycling-package}
-\title{lifecycling: What the Package Does (Title Case)}
+\title{lifecycling: Explains how semantic versioning and lifecycles in R}
 \description{
-More about what it does (maybe more than one line) Use four spaces when indenting paragraphs within the Description.
+This package acts as a demonstration on how to use semantic versioning and lifecycle badges from different badge frameworks to communicate open-source software development with the community.
 }
 \seealso{
 Useful links:
 \itemize{
+  \item \url{https://github.com/joshwlambert/lifecycling}
   \item \url{https://joshwlambert.github.io/lifecycling/}
+  \item Report bugs at \url{https://github.com/joshwlambert/lifecycling/issues}
 }
+
+}
+\author{
+\strong{Maintainer}: Joshua W. Lambert \email{joshua.lambert@lshtm.ac.uk} (\href{https://orcid.org/0000-0001-5218-3046}{ORCID}) [copyright holder]
 
 }
 \keyword{internal}

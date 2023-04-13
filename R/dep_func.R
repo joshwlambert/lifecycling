@@ -53,7 +53,11 @@ soft_dep_func <- function(x, y, z, ...) {
 #' @export
 #'
 #' @examples
-#' hard_dep_func()
+#' # function is designed to error so example is wrapped in a tryCatch()
+#' tryCatch(
+#'   hard_dep_func(),
+#'   error = function(cnd) message("expected error")
+#' )
 hard_dep_func <- function(x, y, z, ...) {
   lifecycle::deprecate_stop(when = "0.1.0", what = "hard_dep_func()")
   print("Deprecated function")

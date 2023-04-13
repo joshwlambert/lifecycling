@@ -22,5 +22,9 @@ Nothing, called for printing side-effect.
 \ifelse{html}{\href{https://lifecycle.r-lib.org/articles/stages.html#deprecated}{\figure{lifecycle-deprecated.svg}{options: alt='[Deprecated]'}}}{\strong{[Deprecated]}}
 }
 \examples{
-hard_dep_func()
+# function is designed to error so example is wrapped in a tryCatch()
+tryCatch(
+  hard_dep_func(),
+  error = function(cnd) message("expected error")
+)
 }
