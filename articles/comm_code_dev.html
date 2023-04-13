@@ -130,11 +130,33 @@ This aids users in understanding whether they should continue using a
 package, whether their package needs updating due to a breaking change
 or whether they need to install the newest version because a bug was
 recently fixed.</p>
+<p>In R there are several packages that work with versioning, and
+specifically semantic versioning. The {semver} package provides
+functions for parsing, rendering and comparing versions. There is also
+the {semverutils} R package which provides similar functionality using
+<code>R6</code>. The {usethis} package provides handy utility function
+for changing the versions of R packages being developed
+(<code>usethis::use_version()</code> and
+<code>usethis::use_dev_version()</code>).</p>
 <p>Overall sematic versioning provides what they describe as a “formal
 specification” to facilitate management of package development and the
-dependencies of that package.</p>
-<p>Although not discussed in this post there are alternatives to
-semantic versioning, such as calendar versioning<a class="footnote-ref" tabindex="0" data-bs-toggle="popover" data-bs-content='&lt;p&gt;&lt;a href="https://sedimental.org/calver.html#" class="external-link uri"&gt;https://sedimental.org/calver.html#&lt;/a&gt;:~:text=Calendar%20versioning%20represents%20a%20powerful,the%20needs%20of%20the%20project.&lt;/p&gt;'><sup>2</sup></a>.</p>
+dependencies of that package. Although not discussed in this post there
+are alternatives to semantic versioning, such as calendar versioning<a class="footnote-ref" tabindex="0" data-bs-toggle="popover" data-bs-content='&lt;p&gt;&lt;a href="https://calver.org/" class="external-link uri"&gt;https://calver.org/&lt;/a&gt;&lt;/p&gt;'><sup>2</sup></a>. Some of
+the critique raised for semantic versioning is it’s lack of objective
+criteria for version incrementing, a breaking change or a small bug fix
+can be easily identified and correspond to major and patch version
+increments, but other changes are more uncertain to which version number
+they correspond to. Additionally semantic versioning implying only
+breaking changes warrant major releases, but a vast re-write of a code
+base may also justify a major version change. Different breaking changes
+have different magnitudes, therefore a change to a single exported
+function or a change to every exported function will be communicated in
+a single, equal, version increment.</p>
+<p>The benefits of versioning apply beyond communicating with users and
+developers. Implementing versioning eases reproducibility by allowing
+systems to record which version of a language or package was used. In R
+this can be achieved in several ways, with some popular examples being
+the {renv} package and docker.</p>
 </div>
 <div class="section level2">
 <h2 id="lifecycle-badges">Lifecycle badges<a class="anchor" aria-label="anchor" href="#lifecycle-badges"></a>
