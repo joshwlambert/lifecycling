@@ -1,4 +1,14 @@
 url: https://joshwlambert.github.io/lifecycling/
 template:
   bootstrap: 5
+   bslib:
+    font_weight_base : 300
 
+reference:
+  - title: Examples of {lifecycle} functionality
+    desc: Functions wrapping {lifecycle} functions
+    contents:
+    - dep_func
+    - expe_func
+    - foo
+    - sup_func
