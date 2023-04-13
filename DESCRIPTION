@@ -13,3 +13,6 @@ Imports:
     lifecycle (>= 1.0.0)
 RoxygenNote: 7.2.3
 Roxygen: list(markdown = TRUE)
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
