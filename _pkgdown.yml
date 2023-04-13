@@ -9,6 +9,8 @@ reference:
     desc: Functions wrapping {lifecycle} functions
     contents:
     - dep_func
+    - hard_dep_func
+    - soft_dep_func
     - expe_func
     - foo
     - sup_func
