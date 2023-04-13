@@ -1,11 +1,18 @@
 Package: lifecycling
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Explains how semantic versioning and lifecycles in R
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
+Authors@R: 
+    person(
+        given = "Joshua W.",
+        family = "Lambert",
+        role = c("aut", "cre", "cph"),
+        email = "joshua.lambert@lshtm.ac.uk",
+        comment = c(ORCID = "https://orcid.org/0000-0001-5218-3046")
+    )
+Description: This package acts as a demonstration on how to use semantic 
+    versioning and lifecycle badges from different badge frameworks to 
+    communicate open-source software development with the community.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
@@ -21,4 +28,5 @@ Suggests:
     covr
 Config/testthat/edition: 3
 VignetteBuilder: knitr
-URL: https://joshwlambert.github.io/lifecycling/
+URL: https://github.com/joshwlambert/lifecycling, https://joshwlambert.github.io/lifecycling/
+BugReports: https://github.com/joshwlambert/lifecycling/issues
