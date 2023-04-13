@@ -1,0 +1,145 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# lifecycling :bicyclist: :bicyclist: :bicyclist:
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of lifecycling is to demonstrate good practises for communicating the 
+development of code through versioning and lifecycle stages.
+
+## Installation
+
+You can install the development version of lifecycling from [GitHub](https://github.com/) with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("joshwlambert/lifecycling")
+```
+
+## Lifecycles
+
+The three types of lifecycle badges explored in this repo are:
+
+- tidyverse {lifecycle} 
+- reconverse lifecycles
+- repostatus
+
+The lifecycle badges available from each of these are:
+
+### {lifecycle}
+
+``` r
+- lifecycle::badge("experimental")
+```
+
+```{r, results="asis", echo=FALSE}
+cat("![](man/figures/lifecycle-experimental.svg)\n")
+```
+
+``` r
+- lifecycle::badge("stable")
+```
+
+```{r, results="asis", echo=FALSE}
+cat("![](man/figures/lifecycle-stable.svg)\n")
+```
+
+``` r
+- lifecycle::badge("superseded")
+```
+
+```{r, results="asis", echo=FALSE}
+cat("![](man/figures/lifecycle-superseded.svg)\n")
+```
+
+``` r
+- lifecycle::badge("deprecated")
+```
+
+```{r, results="asis", echo=FALSE}
+cat("![](man/figures/lifecycle-deprecated.svg)\n")
+```
+
+### reconverse
+
+```{r, results="asis", echo=FALSE}
+cat("![](https://raw.githubusercontent.com/reconverse/reconverse.github.io/master/images/badge-concept.svg)\n")
+```
+
+```{r, results="asis", echo=FALSE}
+cat("![](https://raw.githubusercontent.com/reconverse/reconverse.github.io/master/images/badge-experimental.svg)\n")
+```
+
+```{r, results="asis", echo=FALSE}
+cat("![](https://raw.githubusercontent.com/reconverse/reconverse.github.io/master/images/badge-maturing.svg)\n")
+```
+
+```{r, results="asis", echo=FALSE}
+cat("![](https://raw.githubusercontent.com/reconverse/reconverse.github.io/master/images/badge-stable.svg)\n")
+```
+
+### RepoStatus
+
+```{r, results="asis", echo=FALSE}
+cat("![](https://raw.githubusercontent.com/jantman/repostatus.org/master/badges/latest/concept.svg)\n")
+```
+
+```{r, results="asis", echo=FALSE}
+cat("![](https://raw.githubusercontent.com/jantman/repostatus.org/master/badges/latest/wip.svg)\n")
+```
+
+```{r, results="asis", echo=FALSE}
+cat("![](https://raw.githubusercontent.com/jantman/repostatus.org/master/badges/latest/suspended.svg)\n")
+```
+
+```{r, results="asis", echo=FALSE}
+cat("![](https://raw.githubusercontent.com/jantman/repostatus.org/master/badges/latest/abandoned.svg)\n")
+```
+
+```{r, results="asis", echo=FALSE}
+cat("![](https://raw.githubusercontent.com/jantman/repostatus.org/master/badges/latest/active.svg)\n")
+```
+
+```{r, results="asis", echo=FALSE}
+cat("![](https://raw.githubusercontent.com/jantman/repostatus.org/master/badges/latest/inactive.svg)\n")
+```
+
+```{r, results="asis", echo=FALSE}
+cat("![](https://raw.githubusercontent.com/jantman/repostatus.org/master/badges/latest/unsupported.svg)\n")
+```
+
+```{r, results="asis", echo=FALSE}
+cat("![](https://raw.githubusercontent.com/jantman/repostatus.org/master/badges/latest/moved.svg)\n")
+```
+
+## Example
+
+This is a basic example which shows you how to solve a common problem:
+
+```{r example, error=TRUE}
+library(lifecycling)
+
+# basic demonstration of functions from {lifecycle}:
+
+expe_func()
+dep_func()
+soft_dep_func()
+hard_dep_func()
+sup_func()
+```
+
+
