@@ -4,6 +4,8 @@
 # lifecycling :bicyclist: :bicyclist: :bicyclist:
 
 <!-- badges: start -->
+
+[![R-CMD-check](https://github.com/joshwlambert/lifecycling/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/joshwlambert/lifecycling/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 The goal of lifecycling is to demonstrate good practises for
