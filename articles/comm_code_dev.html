@@ -88,17 +88,17 @@ interface, API), and features get added over time. Software in a
 open-source setting, in which the code is publicly hosted in a
 repository (e.g., Github, Gitlab, BitBucket) allows the public to track
 developments. It also allows the developer community to contribute to
-the software easily. There are certain metrics which can be used to
-convey to users of a package or other developers at what stage of
-development it is in. For example the number of commits, a repository
-with few commits may indicate that a project is still in an incipient
-phase and will undergo several breaking changes. However, different
-software projects become stable at different rates and the number of
-commits may mean very different things for a repository containing an
-operating system compared to an R package with minimal functionality. It
-is therefore important that developers communicate with users and
-developers at what stage of develop the project is in and how stable the
-code base is.</p>
+the software easily.</p>
+<p>There are certain metrics which can be used to convey to users of a
+package or other developers at what stage of development it is in. For
+example the number of commits, a repository with few commits may
+indicate that a project is still in an incipient phase and will undergo
+several breaking changes. However, different software projects become
+stable at different rates and the number of commits may mean very
+different things for a repository containing an operating system
+compared to an R package with minimal functionality. It is therefore
+important that developers communicate with users and developers at what
+stage of develop the project is in and how stable the code base is.</p>
 <p>Software development, and specifically R package development, has
 several methods to communicate stability. This blog post will discuss
 two such methods and give examples for each. The first of these is
@@ -111,13 +111,16 @@ function argument) to convey how a user should interact and use.</p>
 </h2>
 <p>Versioning code is not a new concept and has been used for decades<a class="footnote-ref" tabindex="0" data-bs-toggle="popover" data-bs-content='&lt;p&gt;&lt;a href="https://en.wikipedia.org/wiki/Version_control" class="external-link uri"&gt;https://en.wikipedia.org/wiki/Version_control&lt;/a&gt;&lt;/p&gt;'><sup>1</sup></a>. It has
 lead to version control systems such as git. However, in this post we
-are interested in versioing to communicate development. One such
-philosophy is <a href="https://semver.org/" class="external-link">semantic versioning</a>.
-This aims to describe the stage of software development by attaching
-semantics (i.e. meaning) to the format and numbering of versions. The
-version system works through three numbers, each separated by a dot. The
-numbers, from left to right, convey major version, minor version and
-patch version. Therefore, 0.5.2, is greater than 0.3.9.</p>
+are interested in versioing to communicate development.</p>
+<div class="section level3">
+<h3 id="semantic-versioning">Semantic versioning<a class="anchor" aria-label="anchor" href="#semantic-versioning"></a>
+</h3>
+<p>One such philosophy is <a href="https://semver.org/" class="external-link">semantic
+versioning</a>. This aims to describe the stage of software development
+by attaching semantics (i.e. meaning) to the format and numbering of
+versions. The version system works through three numbers, each separated
+by a dot. The numbers, from left to right, convey major version, minor
+version and patch version. Therefore, 0.5.2, is greater than 0.3.9.</p>
 <p>Employing semantic versioning in ones code development allows others
 to determine whether a package has undergone substantial development and
 testing, and informs to whether it would make a suitable package to use
@@ -140,23 +143,29 @@ for changing the versions of R packages being developed
 <code>usethis::use_dev_version()</code>).</p>
 <p>Overall sematic versioning provides what they describe as a “formal
 specification” to facilitate management of package development and the
-dependencies of that package. Although not discussed in this post there
-are alternatives to semantic versioning, such as calendar versioning<a class="footnote-ref" tabindex="0" data-bs-toggle="popover" data-bs-content='&lt;p&gt;&lt;a href="https://calver.org/" class="external-link uri"&gt;https://calver.org/&lt;/a&gt;&lt;/p&gt;'><sup>2</sup></a>. Some of
-the critique raised for semantic versioning is it’s lack of objective
-criteria for version incrementing, a breaking change or a small bug fix
-can be easily identified and correspond to major and patch version
-increments, but other changes are more uncertain to which version number
-they correspond to. Additionally semantic versioning implying only
-breaking changes warrant major releases, but a vast re-write of a code
-base may also justify a major version change. Different breaking changes
-have different magnitudes, therefore a change to a single exported
-function or a change to every exported function will be communicated in
-a single, equal, version increment.</p>
+dependencies of that package.</p>
+</div>
+<div class="section level3">
+<h3 id="alternatives-to-seminatic-versioning">Alternatives to seminatic versioning<a class="anchor" aria-label="anchor" href="#alternatives-to-seminatic-versioning"></a>
+</h3>
+<p>Although not discussed in this post there are alternatives to
+semantic versioning, such as calendar versioning<a class="footnote-ref" tabindex="0" data-bs-toggle="popover" data-bs-content='&lt;p&gt;&lt;a href="https://calver.org/" class="external-link uri"&gt;https://calver.org/&lt;/a&gt;&lt;/p&gt;'><sup>2</sup></a>. Some of the critique
+raised for semantic versioning is it’s lack of objective criteria for
+version incrementing, a breaking change or a small bug fix can be easily
+identified and correspond to major and patch version increments, but
+other changes are more uncertain to which version number they correspond
+to. Additionally semantic versioning implying only breaking changes
+warrant major releases, but a vast re-write of a code base may also
+justify a major version change. Different breaking changes have
+different magnitudes, therefore a change to a single exported function
+or a change to every exported function will be communicated in a single,
+equal, version increment.</p>
 <p>The benefits of versioning apply beyond communicating with users and
 developers. Implementing versioning eases reproducibility by allowing
 systems to record which version of a language or package was used. In R
 this can be achieved in several ways, with some popular examples being
 the {renv} package and docker.</p>
+</div>
 </div>
 <div class="section level2">
 <h2 id="lifecycle-badges">Lifecycle badges<a class="anchor" aria-label="anchor" href="#lifecycle-badges"></a>
@@ -267,12 +276,12 @@ versioning less than 0.1.0, less than 1.0.0 and greater than 1.0.0,
 respectively.</p>
 </div>
 <div class="section level3">
-<h3 id="communicating-development-in-the-epiverse">Communicating development in the Epiverse<a class="anchor" aria-label="anchor" href="#communicating-development-in-the-epiverse"></a>
+<h3 id="communicating-development-in-the-epiverse-trace">Communicating development in the Epiverse-TRACE<a class="anchor" aria-label="anchor" href="#communicating-development-in-the-epiverse-trace"></a>
 </h3>
-<p>Within the Epiverse initiative we use semantic versioning and badges
-to convey to the community interacting with our code at which stage of
-developement each project is in. We do not have fixed rules on which
-badges to use and a variety of badges can be found across the
+<p>Within the Epiverse-TRACE initiative we use semantic versioning and
+badges to convey to the community interacting with our code at which
+stage of developement each project is in. We do not have fixed rules on
+which badges to use and a variety of badges can be found across the
 repositories in the <a href="https://github.com/epiverse-trace" class="external-link">organisation</a>. For example
 reconverse badges are used for {linelist}, RepoStatus badge is used in
 {finalsize}, and tidyverse badges are used in {epiparameter}. We take
@@ -296,6 +305,17 @@ being deprecated or archived. As with almost all code, at some point
 development ceases and this stage should be communicated, even if just
 to say that the package is not being updated inline with developments in
 the underlying language, in this case R.</p>
+<p>There are no plans within Epiverse-TRACE to develop a new badging
+system as the existing systems cover almost all use cases. In the event
+that the current development stage cannot be adequately communicated
+with a single badge from one of the frameworks discussed, a combination
+of badges can be used. For example, early on in a project adding both
+the experimental badge from {lifecycle} or reconverse and the WIP badge
+from RepoStatus may more accurately describe the projects develop pace.
+Alternatively, the stable both, from either {lifecycle} or reconverse
+can be coupled with either Active or Inactive from RepoStatus to let
+other developers know if software will be updated with new language
+features or dependency deprecations.</p>
 <p>Overall, the use of any of the three lifecycle frameworks described
 here is better than none.</p>
 </div>
