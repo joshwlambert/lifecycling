@@ -12,6 +12,8 @@ MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.or
 coverage](https://codecov.io/gh/joshwlambert/lifecycling/branch/main/graph/badge.svg)](https://app.codecov.io/gh/joshwlambert/lifecycling?branch=main)
 [![Lifecycle:
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
+![GitHub last commit (by
+committer)](https://img.shields.io/github/last-commit/joshwlambert/lifecycling?color=%23E6E6FA)
 <!-- badges: end -->
 
 The goal of lifecycling is to demonstrate good practises for
