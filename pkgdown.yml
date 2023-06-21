@@ -4,7 +4,7 @@ pkgdown_sha: ~
 articles:
   comm_code_dev: comm_code_dev.html
   lifecycling: lifecycling.html
-last_built: 2023-06-21T17:02Z
+last_built: 2023-06-21T17:05Z
 urls:
   reference: https://joshwlambert.github.io/lifecycling/reference
   article: https://joshwlambert.github.io/lifecycling/articles
