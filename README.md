@@ -14,6 +14,8 @@ coverage](https://codecov.io/gh/joshwlambert/lifecycling/branch/main/graph/badge
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 ![GitHub last commit (by
 committer)](https://img.shields.io/github/last-commit/joshwlambert/lifecycling?color=%23E6E6FA)
+![GitHub commits since latest release (by SemVer including
+pre-releases)](https://img.shields.io/github/commits-since/joshwlambert/lifecycling/v0.1.0/main)
 <!-- badges: end -->
 
 The goal of lifecycling is to demonstrate good practises for
