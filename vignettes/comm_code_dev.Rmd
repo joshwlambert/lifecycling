@@ -125,10 +125,6 @@ Is similar to {lifecycle} reconverse provides four stages of software developmen
 3. maturing
 4. stable
 
-```{r, results='asis', echo=FALSE, fig.height=5, fig.width=5, fig.cap="Reused under MIT license"}
-cat("![](https://github.com/reconverse/reconverse.github.io/blob/a9ecebf28d77e83ad67cf8a645911b667520119f/images/lifecycle_no_text.png)\n")
-```
-
 A difference between {lifecycles} and reconverse is the explicit connection between semantic versioning and development stage in [reconverse](https://www.reconverse.org/lifecycle.html). The transitions between experimental, maturing and stable are linked to the versioning less than 0.1.0, less than 1.0.0 and greater than 1.0.0, respectively.
 
 ### Dynamic badges
