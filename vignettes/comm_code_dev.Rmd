@@ -131,6 +131,12 @@ cat("![](https://github.com/reconverse/reconverse.github.io/blob/a9ecebf28d77e83
 
 A difference between {lifecycles} and reconverse is the explicit connection between semantic versioning and development stage in [reconverse](https://www.reconverse.org/lifecycle.html). The transitions between experimental, maturing and stable are linked to the versioning less than 0.1.0, less than 1.0.0 and greater than 1.0.0, respectively.
 
+### Dynamic badges
+
+All badge frameworks discussed only offer static badges that require developers to manually update as the project moved between phases. This is subject to the maintainers remembering this, which can lead to miscommunication about a package which may have move on from being experimental, or have not been worked on in years but has an active badge.
+
+Dynamics badges, like those offered by <https://shields.io/> give a good indication of how recently the project was changed by showing time since last commit, or the number of commits since last release. These too are not perfect but may better track changes and take the burden of badge updates off the project maintainer.
+
 ## Communicating development in the Epiverse-TRACE
 
 Within the Epiverse-TRACE initiative we use semantic versioning and badges to convey to the community interacting with our code at which stage of developement each project is in. We do not have fixed rules on which badges to use and a variety of badges can be found across the repositories in the [organisation](https://github.com/epiverse-trace). For example reconverse badges are used for {linelist}, RepoStatus badge is used in {finalsize}, and tidyverse badges are used in {epiparameter}. 
